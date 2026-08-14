@@ -33,7 +33,7 @@ Requires Python 3 and a webcam.
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
-pip install -r requirements.txt
+pip install -r requirements-desktop.txt
 python3 gesture_meme.py
 ```
 
@@ -70,5 +70,11 @@ app.js            browser version (MediaPipe tasks-vision WASM)
 index.html        browser UI shell
 memes/            meme images (+ one video, unused for now)
 models/           MediaPipe .task model files used by the desktop version
-requirements.txt  Python dependencies
+requirements-desktop.txt  Python dependencies for the desktop version
 ```
+
+## Deploying to Vercel
+
+The browser app is a static site. Vercel serves the repository root directly;
+no Python runtime or build step is needed. The included `vercel.json` enforces
+that configuration.
