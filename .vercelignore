@@ -1,0 +1,6 @@
+# Desktop-only application files must not be sent to Vercel. Their presence
+# causes the platform to detect this repository as a Python Function project.
+gesture_meme.py
+requirements-desktop.txt
+models/
+Launch Gesture Meme.command

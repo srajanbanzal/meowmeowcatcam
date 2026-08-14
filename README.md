@@ -77,4 +77,5 @@ requirements-desktop.txt  Python dependencies for the desktop version
 
 The browser app is a static site. Vercel serves the repository root directly;
 no Python runtime or build step is needed. The included `vercel.json` enforces
-that configuration.
+that configuration, while `.vercelignore` excludes the desktop-only Python
+application from the deployment upload.
